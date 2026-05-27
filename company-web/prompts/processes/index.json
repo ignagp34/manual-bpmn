@@ -1,0 +1,137 @@
+[
+  {
+    "process_id": "SYN001",
+    "filename": "SYN001_university_enrollment_certificate.md",
+    "title": "University enrollment certificate",
+    "process_source": "synthetic",
+    "difficulty": "easy",
+    "expected_features": ["sequential_flow", "single_pool", "tasks", "start_end_events"],
+    "short_description": "Registrar office issues an enrollment certificate after verifying the student record."
+  },
+  {
+    "process_id": "SYN002",
+    "filename": "SYN002_it_password_reset_fulfillment.md",
+    "title": "IT password reset fulfillment",
+    "process_source": "synthetic",
+    "difficulty": "easy",
+    "expected_features": ["sequential_flow", "single_pool", "tasks", "start_end_events"],
+    "short_description": "IT support verifies identity, resets a password, and resolves the ticket."
+  },
+  {
+    "process_id": "SYN003",
+    "filename": "SYN003_outpatient_checkin.md",
+    "title": "Outpatient appointment check-in",
+    "process_source": "synthetic",
+    "difficulty": "easy",
+    "expected_features": ["sequential_flow", "single_pool", "tasks", "start_end_events"],
+    "short_description": "Clinic reception checks in a patient for a scheduled appointment."
+  },
+  {
+    "process_id": "SYN004",
+    "filename": "SYN004_insurance_claim_triage.md",
+    "title": "Insurance claim triage",
+    "process_source": "synthetic",
+    "difficulty": "medium",
+    "expected_features": ["xor_gateway", "alternative_paths", "merge", "single_pool"],
+    "short_description": "A claims handler routes a home damage claim to rejection, fast-track approval, or detailed assessment."
+  },
+  {
+    "process_id": "SYN005",
+    "filename": "SYN005_travel_reimbursement_approval.md",
+    "title": "Travel reimbursement approval",
+    "process_source": "synthetic",
+    "difficulty": "medium",
+    "expected_features": ["xor_gateway", "alternative_paths", "merge", "single_pool"],
+    "short_description": "Finance reviews a reimbursement request and either returns it, auto-approves it, or escalates it for manager approval."
+  },
+  {
+    "process_id": "SYN006",
+    "filename": "SYN006_bank_card_application_outcome.md",
+    "title": "Bank card application outcome",
+    "process_source": "synthetic",
+    "difficulty": "medium",
+    "expected_features": ["xor_gateway", "alternative_paths", "merge", "single_pool"],
+    "short_description": "A bank processes a credit card application with direct approval, manual review, or rejection outcomes."
+  },
+  {
+    "process_id": "SYN007",
+    "filename": "SYN007_employee_onboarding_setup.md",
+    "title": "Employee onboarding setup",
+    "process_source": "synthetic",
+    "difficulty": "medium",
+    "expected_features": ["parallel_gateway", "fork_join", "single_pool", "tasks"],
+    "short_description": "HR operations launches onboarding activities in parallel before sending the welcome package."
+  },
+  {
+    "process_id": "SYN008",
+    "filename": "SYN008_procurement_request_fulfillment.md",
+    "title": "Procurement request fulfillment",
+    "process_source": "synthetic",
+    "difficulty": "medium",
+    "expected_features": ["parallel_gateway", "fork_join", "single_pool", "tasks"],
+    "short_description": "Procurement reserves budget, creates the purchase order, and alerts the warehouse in parallel."
+  },
+  {
+    "process_id": "SYN009",
+    "filename": "SYN009_applicant_hr_interview_scheduling.md",
+    "title": "Applicant and HR interview scheduling",
+    "process_source": "synthetic",
+    "difficulty": "medium",
+    "expected_features": ["multiple_pools", "message_flow", "send_receive", "xor_gateway"],
+    "short_description": "An applicant and recruiter exchange messages until an interview slot is confirmed."
+  },
+  {
+    "process_id": "SYN010",
+    "filename": "SYN010_supplier_buyer_purchase_confirmation.md",
+    "title": "Supplier and buyer purchase confirmation",
+    "process_source": "synthetic",
+    "difficulty": "medium",
+    "expected_features": ["multiple_pools", "message_flow", "send_receive", "xor_gateway"],
+    "short_description": "A supplier and buyer negotiate availability and confirm or reject a purchase order."
+  },
+  {
+    "process_id": "SYN011",
+    "filename": "SYN011_public_grant_application_review.md",
+    "title": "Public grant application review",
+    "process_source": "synthetic",
+    "difficulty": "medium",
+    "expected_features": ["data_objects", "data_store", "annotations", "single_pool"],
+    "short_description": "A grant officer reviews forms and supporting files, records the case, and produces an evaluation report."
+  },
+  {
+    "process_id": "SYN012",
+    "filename": "SYN012_hospital_billing_adjustment.md",
+    "title": "Hospital billing adjustment",
+    "process_source": "synthetic",
+    "difficulty": "medium",
+    "expected_features": ["data_objects", "data_store", "annotations", "xor_gateway"],
+    "short_description": "Hospital billing reviews disputed charges and either explains the bill or issues a corrected invoice."
+  },
+  {
+    "process_id": "SYN013",
+    "filename": "SYN013_support_ticket_sla_breach.md",
+    "title": "Support ticket SLA breach",
+    "process_source": "synthetic",
+    "difficulty": "hard",
+    "expected_features": ["timer_event", "escalation", "exception_flow", "single_pool"],
+    "short_description": "An IT support ticket is either resolved in time or escalated when the SLA deadline is reached."
+  },
+  {
+    "process_id": "SYN014",
+    "filename": "SYN014_travel_booking_payment_timeout.md",
+    "title": "Travel booking payment timeout",
+    "process_source": "synthetic",
+    "difficulty": "hard",
+    "expected_features": ["timer_event", "cancellation", "exception_flow", "multiple_pools"],
+    "short_description": "A traveler either pays before the deadline and receives a ticket or misses the deadline and receives a cancellation."
+  },
+  {
+    "process_id": "SYN015",
+    "filename": "SYN015_software_procurement_stress_test.md",
+    "title": "Software procurement stress test",
+    "process_source": "synthetic",
+    "difficulty": "stress",
+    "expected_features": ["multiple_lanes", "xor_gateway", "parallel_gateway", "message_flow", "data_objects", "timer_or_exception_event"],
+    "short_description": "A cross-functional software procurement process combines approvals, supplier communication, parallel reviews, data artifacts, and deadline-driven exceptions."
+  }
+]

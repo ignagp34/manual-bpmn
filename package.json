@@ -1,0 +1,21 @@
+{
+  "name": "bpmn-dsl-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Monorepo: @text-to-bpmn/core engine + tfm-lab research app + company-web demo.",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "dev:tfm": "pnpm --filter tfm-lab dev",
+    "dev:company": "pnpm --filter company-web dev",
+    "build:company": "pnpm --filter company-web build"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}

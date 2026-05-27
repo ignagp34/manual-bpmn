@@ -1,0 +1,27 @@
+{
+  "name": "@text-to-bpmn/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DSL → BPMN parser, layout, renderer, and validator. Shared engine for tfm-lab and company-web.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "bpmn-auto-layout": "^0.5.0",
+    "bpmn-js": "^17.11.1",
+    "bpmn-moddle": "^8.1.0",
+    "chevrotain": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3",
+    "vitest": "^4.1.6"
+  }
+}
